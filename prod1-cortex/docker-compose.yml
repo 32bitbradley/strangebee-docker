@@ -1,7 +1,7 @@
 services:
   elasticsearch:
     image: "elasticsearch:${elasticsearch_image_version}"
-    container_name: elasticsearch
+    # container_name: elasticsearch
     hostname: elasticsearch
     restart: unless-stopped
     user: ${UID}:0
@@ -45,7 +45,7 @@ services:
 
   cortex:
     image: "thehiveproject/cortex:${cortex_image_version}"
-    container_name: cortex
+    # container_name: cortex
     hostname: cortex
     restart: unless-stopped
     environment:
@@ -95,7 +95,7 @@ services:
 
   nginx:
     image: "nginx:${nginx_image_version}"
-    container_name: nginx
+    # container_name: nginx
     hostname: nginx
     restart: unless-stopped
     environment:
