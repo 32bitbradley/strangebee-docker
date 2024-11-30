@@ -144,7 +144,7 @@ services:
       - ./nginx/templates:/etc/nginx/templates  # Custom Nginx configuration
       - ./nginx/certs:/etc/nginx/certs  # Directory for custom certificates
     ports:
-      - '443:443'
+      - '9000:443'
     networks:
       - thehive-network
     deploy:
