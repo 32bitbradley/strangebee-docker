@@ -105,7 +105,7 @@ services:
       - ./nginx/templates:/etc/nginx/templates  # Custom Nginx configuration
       - ./nginx/certs:/etc/nginx/certs  # Directory for custom certificates
     ports:
-      - '9001:443'
+      - '4431:443'
     networks:
       - cortex-network
     deploy:
