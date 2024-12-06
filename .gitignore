@@ -31,3 +31,6 @@
 /**/server.key
 /**/server.crt
 /**/ca.pem
+
+# Ignore soc-in-a-box prefixed files
+soc-in-a-box-*
